@@ -1,0 +1,26 @@
+
+<div class="container">
+  <h2 class='text-center mb-4'>Vista de productos</h2>	
+    <table class="table table-dark" id="lista">
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Price</td>
+          <td>Thumbnail</td>
+          <td>Stock</td>
+        </tr> 
+      </thead>
+      <tbody id="tbodyID">
+        {{#each products}}
+					<tr>
+            <td  class="text-center align-middle">{{this._id}}</td>
+						<td  class="text-center align-middle">{{this.name}}</td>
+						<td  class="text-center align-middle">{{this.price}}</td>
+            <td  class="text-center align-middle">{{this.thumbnail}}</td>
+            <td  class="text-center align-middle">{{this.stock}}</td>
+					</tr>
+				{{/each}}     
+      </tbody>
+    </table>   
+</div>
